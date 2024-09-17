@@ -3,13 +3,17 @@ using namespace vex;
 extern brain Brain;
 
 // VEXcode devices
-extern digital_out frontHook;
+extern controller Controller1;
 extern inertial inertialSensor;
+extern digital_out frontHook;
 extern motor frontMogo;
 extern motor ringLift;
-extern motor_group LeftDriveSmart;
-extern motor_group RightDriveSmart;
-extern controller Controller1;
+extern motor LeftDriveSmartA;
+extern motor LeftDriveSmartB;
+extern motor LeftDriveSmartC;
+extern motor RightDriveSmartA;
+extern motor RightDriveSmartB;
+extern motor RightDriveSmartC;
 extern digital_out rearHook;
 extern digital_out autonHook;
 

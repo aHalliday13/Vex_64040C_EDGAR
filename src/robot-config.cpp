@@ -8,25 +8,17 @@ using code = vision::code;
 brain  Brain;
 
 // VEXcode device constructors
-
 controller Controller1 = controller(primary);
 inertial inertialSensor = inertial(PORT10);
-
 digital_out frontHook = digital_out(Brain.ThreeWirePort.H);
-motor frontMogo = motor(PORT7, ratio36_1, true);
-
-motor ringLift = motor(PORT11, ratio18_1, false);              //FIX GEARS LMAO
-
-motor LeftDriveSmartMotorA = motor(PORT1, ratio6_1, true);
-motor LeftDriveSmartMotorB = motor(PORT3, ratio6_1, false);
-motor LeftDriveSmartMotorC = motor(PORT9, ratio6_1, false);
-motor_group LeftDriveSmart = motor_group(LeftDriveSmartMotorA, LeftDriveSmartMotorB, LeftDriveSmartMotorC);
-
-motor RightDriveSmartMotorA = motor(PORT2, ratio6_1, false);
-motor RightDriveSmartMotorB = motor(PORT4, ratio6_1, true);
-motor RightDriveSmartMotorC = motor(PORT6, ratio6_1, true);
-motor_group RightDriveSmart = motor_group(RightDriveSmartMotorA, RightDriveSmartMotorB, RightDriveSmartMotorC);
-
+motor frontMogo = motor(PORT20, ratio36_1, true);
+motor ringLift = motor(PORT11, ratio6_1, false);
+motor LeftDriveSmartA = motor(PORT1, ratio6_1, true);
+motor LeftDriveSmartB = motor(PORT3, ratio6_1, false);
+motor LeftDriveSmartC = motor(PORT9, ratio6_1, false);
+motor RightDriveSmartA = motor(PORT2, ratio6_1, false);
+motor RightDriveSmartB = motor(PORT4, ratio6_1, true);
+motor RightDriveSmartC = motor(PORT6, ratio6_1, true);
 digital_out rearHook = digital_out(Brain.ThreeWirePort.G);
 digital_out autonHook = digital_out(Brain.ThreeWirePort.A);
 
